@@ -1,9 +1,18 @@
 import React from 'react';
 import Gallery from './components/Gallery'; 
+import Welcome from './components/Welcome';
 
-function App() {
-  return <Gallery/>;
+export default function App() {
+  return (
+  <div>
+    <Welcome /> 
+    <Gallery />
+  </div>
+  );
 }
 
 
-export default App;
+
+
+//I will be adding my seeds and models 
+// the queires and 
