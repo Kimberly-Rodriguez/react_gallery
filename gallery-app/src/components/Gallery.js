@@ -3,6 +3,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 
+
 export default function Gallery() {
   const message= 'Hello world! I am going to render a picture soon';
  
