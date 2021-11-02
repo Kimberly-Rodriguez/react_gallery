@@ -1,10 +1,17 @@
 import React from 'react';
 
-function Alert(props) {
-  console.log(props);
+
+function Alert() {
+
+  const message = 'correct password';
+  const alertType = 'success';
+
+  // const message = 'Invalid user id or password';
+  // const alertType = 'danger';  
+
   return (
-    <div className={`alert alert-${props.type || 'success'}`} role="alert">
-      {props.message}
+    <div className={`alert alert-${alertType || 'success'}`} role="alert">
+      {message}
     </div>
   );
 }
