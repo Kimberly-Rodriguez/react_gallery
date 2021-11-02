@@ -13,7 +13,7 @@ export default function List({users , snacks}) {
         </ul>
         
         <div>
-        <h1>Below are some snacks I like to eat while coding:</h1>
+        <h1>Favorite Snacks:</h1>
         <ul className="list-group">
           {snacks.map(item => (
             <li className="list-group-item" key={item.id}>

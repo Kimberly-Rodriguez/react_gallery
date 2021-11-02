@@ -3,6 +3,7 @@ import Gallery from './components/Gallery';
 import Welcome from './components/Welcome';
 import List from './components/List';
 import Nav from './components/Nav';
+import JSXVariables from './components/JSXVariables';
 
 import users from './users';
 import snacks from './snacks';
@@ -14,6 +15,7 @@ export default function App() {
     <Welcome /> 
     <Gallery />
     <List users={users} snacks={snacks} />
+    <JSXVariables />
   </div>
   );
 }
