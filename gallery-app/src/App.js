@@ -5,6 +5,7 @@ import List from './components/List';
 import Nav from './components/Nav';
 
 import users from './users';
+import snacks from './snacks';
 
 export default function App() {
   return (
@@ -12,7 +13,7 @@ export default function App() {
     <Nav />
     <Welcome /> 
     <Gallery />
-    <List users={users} />
+    <List users={users} snacks={snacks} />
   </div>
   );
 }
