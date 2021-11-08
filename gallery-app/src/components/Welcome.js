@@ -11,6 +11,5 @@ export default function Welcome() {
         <li>Props</li>
       </ul>
     </div>
-    
   );
 }

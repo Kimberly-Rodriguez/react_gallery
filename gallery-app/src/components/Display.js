@@ -1,6 +1,8 @@
 import React from 'react';
 import Card from './Card';
 
+
+
 const canines = [
   {
     name: 'Spot',
@@ -25,6 +27,10 @@ export default function Display() {
       {canines.map((dog) => (
         <Card name={dog.name} description={dog.description} key={dog.id} />
       ))}
-    </div>
+    
+  </div>
+
+
   );
 }
+

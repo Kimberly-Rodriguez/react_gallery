@@ -4,7 +4,7 @@ export default function Card(props) {
   const cardStyle = {
     width: '18rem',
   };
-// with for place holder image
+// width for place holder image
   const randomWidth = () => {
     const number = Math.random() * (300 - 200) + 200;
     return number.toString().split('.')[0];
