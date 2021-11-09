@@ -31,6 +31,7 @@ export default function App() {
     <Nav />
     <Welcome />
     <Form/>
+    <Alert />
     {/* <Gallery Carousel={Carousel} /> */}
     <List users={users} snacks={snacks} />
     
@@ -38,7 +39,7 @@ export default function App() {
     <Greeting/>
     <Thermostat />
     <Counter/>
-    <Alert />
+    
     <Display />
 
     {/* <>
