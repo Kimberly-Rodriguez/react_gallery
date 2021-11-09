@@ -15,6 +15,7 @@ import Counter from './components/Counter';
 import users from './users';
 import snacks from './snacks';
 import Greeting from './components/Greeting';
+import Form from './components';
 
 // const breakPoints = [
 //   { width: 1, itemsToShow: 1 },
@@ -32,6 +33,7 @@ export default function App() {
     {/* <Gallery Carousel={Carousel} /> */}
     <List users={users} snacks={snacks} />
     <JSXVariables />
+    <Form/>
     <Counter/>
     <Alert />
     <Display />
