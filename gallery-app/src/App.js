@@ -8,6 +8,7 @@ import Alert from './components/Alert';
 import Display from "./components/Display";
 import Counter from './components/Counter';
 import Thermostat from './components/Thermostat';
+import SearchResultContainer from './components/SearchResultContainer';
 
 
 // import Carousel from 'react-elastic-carousel';
@@ -34,14 +35,11 @@ export default function App() {
     <Alert />
     {/* <Gallery Carousel={Carousel} /> */}
     <List users={users} snacks={snacks} />
-    
     <JSXVariables />
     <Greeting/>
     <Thermostat />
     <Counter/>
-    
     <Display />
-
     <SearchResultContainer />
 
     {/* <>
