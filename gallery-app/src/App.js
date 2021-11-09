@@ -29,13 +29,14 @@ export default function App() {
   return (
   <div>
     <Nav />
-    <Greeting/>
     <Welcome />
+    <Form/>
     {/* <Gallery Carousel={Carousel} /> */}
     <List users={users} snacks={snacks} />
-    <Thermostat />
+    
     <JSXVariables />
-    <Form/>
+    <Greeting/>
+    <Thermostat />
     <Counter/>
     <Alert />
     <Display />

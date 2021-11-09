@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import CardBody from './CardBody';
+import './style.css';
 
 export default function Counter() {
   
@@ -14,7 +15,7 @@ export default function Counter() {
   };
 
   return (
-    <div className="card text-center">
+    <div className="card text-center container-two">
     <div className="card-header bg-primary text-white"> Click Counter! </div>
     <CardBody
       count={count}

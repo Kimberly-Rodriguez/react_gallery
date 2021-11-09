@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import './style.css';
 
 function Thermostat() {
   
@@ -22,7 +23,7 @@ function Thermostat() {
   };
 
   return (
-    <div className="card text-center">
+    <div className="card text-center container-one">
       <div className="card-header bg-warning text-white">
         Building Temperature
       </div>
