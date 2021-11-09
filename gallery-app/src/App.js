@@ -7,6 +7,7 @@ import JSXVariables from './components/JSXVariables';
 import Alert from './components/Alert';
 import Display from "./components/Display";
 import Counter from './components/Counter';
+import Thermostat from './components/Thermostat';
 
 
 // import Carousel from 'react-elastic-carousel';
@@ -32,6 +33,7 @@ export default function App() {
     <Welcome />
     {/* <Gallery Carousel={Carousel} /> */}
     <List users={users} snacks={snacks} />
+    <Thermostat />
     <JSXVariables />
     <Form/>
     <Counter/>
