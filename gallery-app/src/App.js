@@ -6,8 +6,10 @@ import Nav from './components/Nav';
 import JSXVariables from './components/JSXVariables';
 import Alert from './components/Alert';
 import Display from "./components/Display";
+import Counter from './components/Counter';
 
-import Carousel from 'react-elastic-carousel';
+
+// import Carousel from 'react-elastic-carousel';
 // import Item from "./Item";
 
 import users from './users';
@@ -30,6 +32,7 @@ export default function App() {
     {/* <Gallery Carousel={Carousel} /> */}
     <List users={users} snacks={snacks} />
     <JSXVariables />
+    <Counter/>
     <Alert />
     <Display />
 
