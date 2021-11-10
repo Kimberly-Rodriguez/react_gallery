@@ -9,17 +9,16 @@ const SearchResultContainer = () => {
   console.log(results)
 
   const searchGiphy = async (query) => {
-    const response = await search(query);
-    setResults(response.data.data);
+  const response = await search(query);
+  setResults(response.data.data);
   };
 
   useEffect(() => {
-    searchGiphy('kittens');
+  searchGiphy('kittens');
   }, []);
 
   return (
     <div>
-      
       <ResultList results={results} />
     </div>
   );

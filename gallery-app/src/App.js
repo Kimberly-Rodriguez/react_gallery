@@ -29,19 +29,19 @@ import Form from './components';
 export default function App() {
   return (
   <div>
+   
     <Nav />
     <Welcome />
     <Form/>
     <Alert />
     {/* <Gallery Carousel={Carousel} /> */}
+    <Greeting/>
     <List users={users} snacks={snacks} />
     <JSXVariables />
-    <Greeting/>
     <Thermostat />
     <Counter/>
     <Display />
     <SearchResultContainer />
-
     {/* <>
       <h1 style={{ textAlign: "center" }}>Example to setup your carousel in react</h1>
       <div className="App">
