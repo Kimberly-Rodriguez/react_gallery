@@ -6,15 +6,16 @@ import search from '../utils/API';
 const SearchResultContainer = () => {
  
   const [results, setResults] = useState([]);
-  console.log(results)
+
 
   const searchGiphy = async (query) => {
-  const response = await search(query);
-  setResults(response.data.data);
+    const response = await search(query);
+    console.log(response)
+    setResults(response.data.data);
   };
 
   useEffect(() => {
-  searchGiphy('kittens');
+    searchGiphy('kittens');
   }, []);
 
   return (
