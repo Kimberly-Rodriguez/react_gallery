@@ -1,6 +1,10 @@
 import React from 'react';
 import './Home.css';
 
+import imageone from '../assets/img/portfolio/thumbnails/1.jpg'
+import imagetwo from '../assets/img/portfolio/thumbnails/2.jpg'
+import imagethree from '../assets/img/portfolio/thumbnails/3.jpg'
+
 
 
 const Home = () => {
@@ -40,7 +44,7 @@ const Home = () => {
               <div class="row g-0">
                   <div class="col-lg-4 col-sm-6">
                       <a class="portfolio-box" href="assets/img/portfolio/fullsize/1.jpg" title="Project Name">
-                          <img class="img-fluid" src="assets/img/portfolio/thumbnails/1.jpg" alt="..." />
+                          <img class="img-fluid" src={imageone} alt="..." />
                           <div class="portfolio-box-caption">
                               <div class="project-category text-white-50">Category</div>
                               <div class="project-name">Project Name</div>
@@ -48,8 +52,8 @@ const Home = () => {
                       </a>
                   </div>
                   <div class="col-lg-4 col-sm-6">
-                      <a class="portfolio-box" href="assets/img/portfolio/fullsize/2.jpg" title="Project Name">
-                          <img class="img-fluid" src="assets/img/portfolio/thumbnails/2.jpg" alt="..." />
+                      <a class="portfolio-box" href="../assets/img/portfolio/fullsize/2.jpg" title="Project Name">
+                          <img class="img-fluid" src={imagetwo} alt="..." />
                           <div class="portfolio-box-caption">
                               <div class="project-category text-white-50">Category</div>
                               <div class="project-name">Project Name</div>
@@ -58,7 +62,7 @@ const Home = () => {
                   </div>
                   <div class="col-lg-4 col-sm-6">
                       <a class="portfolio-box" href="assets/img/portfolio/fullsize/3.jpg" title="Project Name">
-                          <img class="img-fluid" src="assets/img/portfolio/thumbnails/3.jpg" alt="..." />
+                          <img class="img-fluid" src={imagethree} alt="..." />
                           <div class="portfolio-box-caption">
                               <div class="project-category text-white-50">Category</div>
                               <div class="project-name">Project Name</div>
