@@ -4,16 +4,16 @@ import ResultList from './ResultList';
 import search from '../utils/API';
 
 const SearchResultContainer = () => {
- 
+  
   const [results, setResults] = useState([]);
 
-
+ 
   const searchGiphy = async (query) => {
     const response = await search(query);
-    console.log(response)
     setResults(response.data.data);
   };
 
+  
   useEffect(() => {
     searchGiphy('kittens');
   }, []);

@@ -10,7 +10,7 @@ import Counter from './components/Counter';
 import Thermostat from './components/Thermostat';
 import SearchResultContainer from './components/SearchResultContainer';
 
-
+import Home from "./pages/Home";
 // import Carousel from 'react-elastic-carousel';
 // import Item from "./Item";
 
@@ -19,45 +19,23 @@ import snacks from './snacks';
 import Greeting from './components/Greeting';
 import Form from './components';
 
-// const breakPoints = [
-//   { width: 1, itemsToShow: 1 },
-//   { width: 550, itemsToShow: 2 },
-//   { width: 768, itemsToShow: 3 },
-//   { width: 1200, itemsToShow: 4 },
-// ];
+
 
 export default function App() {
   return (
   <div>
-   
+    <Home />
     <Nav />
     <Welcome />
-    <Form/>
+    <Form />
     <Alert />
-    {/* <Gallery Carousel={Carousel} /> */}
-    <Greeting/>
+    <Greeting />
     <List users={users} snacks={snacks} />
     <JSXVariables />
     <Thermostat />
     <Counter/>
     <Display />
     <SearchResultContainer />
-    {/* <>
-      <h1 style={{ textAlign: "center" }}>Example to setup your carousel in react</h1>
-      <div className="App">
-        <Carousel breakPoints={breakPoints}>
-          <Item>One</Item>
-          <Item>Two</Item>
-          <Item>Three</Item>
-          <Item>Four</Item>
-          <Item>Five</Item>
-          <Item>Six</Item>
-          <Item>Seven</Item>
-          <Item>Eight</Item>
-        </Carousel>
-      </div>
-    </> */}
-  
   </div>
   );
 }
