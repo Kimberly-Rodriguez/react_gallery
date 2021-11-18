@@ -1,42 +1,62 @@
 import React from 'react';
+import ReactDOM from 'react-dom';
 // import Gallery from './components/Gallery'; 
 import Welcome from './components/Welcome';
+
+
 import List from './components/List';
 import Nav from './components/Nav';
 import JSXVariables from './components/JSXVariables';
-import Alert from './components/Alert';
+// import Alert from './components/Alert';
 import Display from "./components/Display";
 import Counter from './components/Counter';
 import Thermostat from './components/Thermostat';
 import SearchResultContainer from './components/SearchResultContainer';
+// import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Home from "./pages/Home";
+import Login from "./pages/Login";
 // import Carousel from 'react-elastic-carousel';
 // import Item from "./Item";
 
 import users from './users';
 import snacks from './snacks';
 import Greeting from './components/Greeting';
-import Form from './components';
 
 
 
-export default function App() {
+
+function App() {
   return (
+  <Router>
   <div>
-    <Home />
-    <Nav />
-    <Welcome />
-    <Form />
-    <Alert />
-    <Greeting />
-    <List users={users} snacks={snacks} />
-    <JSXVariables />
-    <Thermostat />
-    <Counter/>
-    <Display />
-    <SearchResultContainer />
+    <Route exact path="/">
+        <Home />
+    </Route>
+    {/* <Route exact path="/login">
+        <Login />
+    </Route>
+   <Route exact path="/Welcome">
+        <Nav />
+        <Welcome />
+    </Route> */}
+    {/* <Route exact path="/About">
+        <Greeting />
+        <List users={users} snacks={snacks} />
+        <JSXVariables />
+    </Route>
+    <Route exact path="/Dashboard">
+        <Thermostat />
+        <Counter />
+        <Display />
+        <SearchResultContainer />
+    </Route> */}
+      {/* <Alert /> */}
   </div>
+  </Router>
+  
   );
 }
+
+export default App
 

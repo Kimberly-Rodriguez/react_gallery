@@ -2,44 +2,46 @@ import React, { useState } from 'react';
 // import { Link } from 'react-router-dom';
 // import { useMutation } from '@apollo/client';
 // import { LOGIN_USER } from '../utils/mutations';
+import Form from '../components';
 import './Login.css';
 
-import Auth from '../utils/auth';
+
+// import Auth from '../utils/auth';
 
 const Login = () => {
-    const [formState, setFormState] = useState({ email: '', password: '' });
-    const [login, { error, data }] = useMutation(LOGIN_USER);
+    // const [formState, setFormState] = useState({ email: '', password: '' });
+    // const [login, { error, data }] = useMutation(LOGIN_USER);
 
-    // update state based on form input changes
-    const handleChange = (event) => {
-        const { name, value } = event.target;
+    // // update state based on form input changes
+    // const handleChange = (event) => {
+    //     const { name, value } = event.target;
 
-        setFormState({
-            ...formState,
-            [name]: value,
-        });
-    };
+    //     setFormState({
+    //         ...formState,
+    //         [name]: value,
+    //     });
+    // };
 
-    // submit form
-    const handleFormSubmit = async (event) => {
-        event.preventDefault();
-        console.log(formState);
-        try {
-            const { data } = await login({
-                variables: { ...formState },
-            });
+    // // submit form
+    // const handleFormSubmit = async (event) => {
+    //     event.preventDefault();
+    //     console.log(formState);
+    //     try {
+    //         const { data } = await login({
+    //             variables: { ...formState },
+    //         });
 
-            Auth.login(data.login.token);
-        } catch (e) {
-            console.error(e);
-        }
+    //         Auth.login(data.login.token);
+    //     } catch (e) {
+    //         console.error(e);
+    //     }
 
-        // clear form values
-        setFormState({
-            email: '',
-            password: '',
-        });
-    };
+    //     // clear form values
+    //     setFormState({
+    //         email: '',
+    //         password: '',
+    //     });
+    // };
 
     return (
         <main>
@@ -47,7 +49,8 @@ const Login = () => {
                 <div className="card login">
                     <h4 className="card-header p-2 heading">Login</h4>
                     <div className="card-body">
-                        <card>
+                        <form />
+                        {/* <card>
 
                             <form onSubmit={handleFormSubmit}>
                                 <input
@@ -56,14 +59,14 @@ const Login = () => {
                                     name="email"
                                     type="email"
                                     value={formState.email}
-                                    onChange={handleChange}
+                                    // onChange={handleChange}
                                 />
                                 <input
                                     className="form-input"
                                     placeholder="password"
                                     name="password"
-                                    type="password"
-                                    value={formState.password}
+                                    // type="password"
+                                    // value={formState.password}
                                     onChange={handleChange}
                                 />
                                 <button
@@ -73,18 +76,17 @@ const Login = () => {
                                 > Login
                                 </button>
                                 <p className="top-spacing">
-                                    Don't have an account yet? {' '}
-                                    <Link to="/signup">Sign Up Instead</Link>
-                                </p>
+                                    {/* Don't have an account yet? {' '} */}
+                                    {/* <Link to="/signup">Sign Up Instead</Link> */}
+                                {/* </p>
                             </form>
 
-                        </card>
-
-                        {error && (
+                        </card> */} 
+                        {/* {error && (
                             <div className="my-3 p-3 bg-danger text-white">
                                 {error.message}
                             </div>
-                        )}
+                        )} */}
                     </div>
                 </div>
             </div>
