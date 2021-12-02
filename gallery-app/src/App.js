@@ -5,7 +5,7 @@ import Welcome from './components/Welcome';
 
 
 import List from './components/List';
-import Nav from './components/Nav';
+import NavTabs from './components/NavTabs';
 import JSXVariables from './components/JSXVariables';
 // import Alert from './components/Alert';
 import Display from "./components/Display";
@@ -37,7 +37,7 @@ function App() {
         <Login />
     </Route>
    <Route exact path="/Welcome">
-        <Nav />
+        <NavTabs />
         <Welcome />
     </Route> */}
     {/* <Route exact path="/About">
