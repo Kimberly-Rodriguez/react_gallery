@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, Router, Route} from 'react';
 import ReactDOM from 'react-dom';
 // import Gallery from './components/Gallery'; 
 import Welcome from './components/Welcome';
